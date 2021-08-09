@@ -1,0 +1,1 @@
+Each folder contains the sql file with the inserts and demo anomalies
