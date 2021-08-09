@@ -1,0 +1,32 @@
+html {
+    text-align: center;
+    font-family: "Arial Narrow";
+    background-color: rgba(19,22,23,0.2);
+    font-size: 50px;
+}
+
+header {
+    font-size: xx-large;
+}
+
+.grid-container {
+    background-color: rgba(16,22,23,0.36);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 14px;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+.grid-item {
+    padding: 30px;
+}
+
+.check {
+    width: 30px;
+}
+
+button {
+    font-size: 25px;
+    width: auto;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../CSS/ballot.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Ballot Sheet</title>
+</head>
+<body>
+<button id="info" class="tablink">Information</button>
+<button id="local" class="tablink">Ward</button>
+<button id="pr" class="tablink">Proportional Rep</button>
+<button id="dist" class="tablink">District PR</button>
+<button id="submit" class="tablink">Submit</button>
+
+<div id="info-content" class="info-table general tabcontent">
+    Vote for two or three candidates
+</div>
+
+<div id="local-content" class="ward-table general tabcontent">
+    <div class="grid-container" id="ward-add">
+        <div class="grid-item title">Name</div>
+        <div class="grid-item title">Surname</div>
+        <div class="grid-item title">Party</div>
+        <div class="grid-item title">Choose</div>
+    </div>
+
+</div>
+
+<div id="pr-content" class="pr-table general tabcontent">
+    <div class="grid-container-two" id="pr-add">
+        <div class="grid-item title">Party Name</div>
+        <div class="grid-item title">Choose</div>
+    </div>
+</div>
+
+<div id="dist-content" class="pr-table general tabcontent">
+    <div class="grid-container-two" id="dist-add">
+        <div class="grid-item title">Party Name</div>
+        <div class="grid-item title">Choose</div>
+    </div>
+</div>
+
+<div id="submit-content" class="pr-table general tabcontent">
+    <button id="submit-votes">Submit votes</button>
+</div>
+
+</body>
+<script src="https://code.JQuery.com/JQuery-3.4.1.min.js"></script>
+<script src="../Javascript/ballot.js"></script>
+<script src="../Javascript/API_send.js"></script>
+</html>

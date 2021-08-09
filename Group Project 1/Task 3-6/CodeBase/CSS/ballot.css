@@ -1,0 +1,42 @@
+html {
+    font-family: "Arial Narrow";
+    background-color: rgba(19,22,23,0.2);
+}
+
+.grid-container {
+    background-color: rgba(16,22,23,0.36);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 14px;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+.grid-container-two {
+    background-color: rgba(16,22,23,0.36);
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 14px;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+}
+
+.general {
+    padding-top: 15px;
+}
+
+.grid-item {
+    font-size: large;
+
+}
+
+.grid-item.title {
+    font-size: xx-large;
+}
+
+.grid-item :not(.grid-item.title){
+}
+
+.general {
+    text-align: center;
+}

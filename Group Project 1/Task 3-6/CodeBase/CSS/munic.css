@@ -1,0 +1,19 @@
+html {
+    background-color: darkslateblue;
+}
+
+#header {
+    font-size: 60px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+    overflow: auto;
+}
+
+table, th, tr, td {
+    background-color: cadetblue;
+    border: 1px solid darkgray;
+}

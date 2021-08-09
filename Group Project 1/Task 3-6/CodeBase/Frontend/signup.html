@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <header>
+            <h1>Voting 2021</h1>
+            <img class="img" src="img/flag.png" alt="flag">
+        </header>
+    </head>
+
+
+    <body>
+    <div id = "registerForm" action="#">
+        <div>
+            <p id="selection">Select the appropriate option to register for:</p>
+             <button type="button" onclick="Voter()">Voter</button>
+             <button type="button" onclick="Ward()">Ward</button>
+             <button type="button" onclick="Staff()">Staff</button>
+             <button type="button" onclick="PartyMunicipality()">Party Municipality</button>
+             <button type="button" onclick="Party()">Party</button>
+
+            <!-- <select id="mySelect">
+              <option onclick="Voter()">Voter</option>
+              <option onclick="Staff()">Staff</option>
+              <option onclick="Candidate()">Candidate</option>
+              <option id="selparty" value="party" onclick="Party()">Party</option>
+            </select> -->
+        </div>
+        <div id = "overview"  hidden>
+        <div class="input-group">
+          <label id="name">Name</label>
+          <input id="name1" type="name" name="name" value="John">
+        </div>
+        <div class="input-group">
+          <label id="surname">Surname</label>
+          <input id="surname1" type="surname" name="surname" value="WorkHard">
+        </div>
+        <div class="input-group">
+          <label id="address">Address</label>
+          <input id="address1" type="address" name="address" value="123 Streetway drive">
+        </div>
+        <div class="input-group">
+          <label id="newadd">New Address</label>
+          <input id="newadd1" type="address" name="newadd" value="412 Silver Oak">
+        </div>
+        <div class="input-group">
+          <label id="ID">ID Number</label>
+          <input id="ID1" type="text" name="ID" value="9857275017089">
+        </div>
+        <div class="input-group">
+          <label id="province">Province</label>
+          <input id="province1" type="text" name="province" value="Gauteng">
+        </div>
+        <div class="input-group">
+          <label id="partynum">Party Number</label>
+          <input id="partynum1" type="text" name="partynum" value="0">
+        </div>
+        <div class="input-group">
+          <label id="municipalityc">Municipality Code</label>
+          <input id="municipalityc1" type="text" name="municipality" value="TSH">
+        </div>
+
+        <div class="input-group">
+          <label id="workid">Work ID</label>
+          <input id="workid1" type="text" name="workid" value="8794562541315">
+        </div>
+        <div class="input-group">
+          <label id="managerid">Manager ID</label>
+          <input id="managerid1" type="text" name="partynum" value="9904275017089">
+        </div>
+        <div class="input-group">
+          <label id="initials">Initials</label>
+          <input id="initials1" type="text" name="initials" value="J.M.">
+        </div>
+        <div class="input-group">
+          <label id="district">District</label>
+          <input id="district1" type="checkbox" name="district" value="TSH">
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input id="password" type="password" name="password" value="f@t3Lstats">
+        </div>
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input id="confirm" type="password" name="password" value="f@t3Lstats">
+        </div>
+        <div class="input-group">
+          <button id="sub" class="btn">Register</button>
+        </div>
+        </div>
+      <p id = "Wonder"><p>
+        <p>
+            Already Registered? <a href="login.html">Sign in</a>
+        </p>
+        <button id="mun_page">Municipal Codes</button>
+    </div>
+    </body>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.JQuery.com/JQuery-3.4.1.min.js"></script>
+    <script src="../Javascript/API_send.js"></script>
+    <script src="../Javascript/signup.js"></script>
+</html>

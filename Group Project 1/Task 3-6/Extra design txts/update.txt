@@ -1,0 +1,19 @@
+update:
+
+Voter update:
+Show old address (have a div element or something with an element id set and a query will
+get the value and fill the div)
+
+Input fields:
+new address 
+mun code
+
+Staff update:
+select group (dropdown?) and whether to view registered or unregistered (checkbox). 
+button to commit query
+JSON string will be returned with all the data to be populated using a loop with JS. 
+Select a user, and press register/derigister button to send query to update the user.
+Refresh page.
+
+Ballot page I think I will do on the back end perhaps... 
+It seems a bit easier to generate 

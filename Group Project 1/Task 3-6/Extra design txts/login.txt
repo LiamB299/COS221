@@ -1,0 +1,17 @@
+Login:
+
+Voter:
+ID number 
+password
+
+Ward:
+ID number 
+password
+
+Party:
+Party number
+password
+
+Staff:
+work id
+password

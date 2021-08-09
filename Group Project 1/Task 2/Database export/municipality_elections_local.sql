@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 8.0.23, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: municipality_elections
+-- ------------------------------------------------------
+-- Server version	8.0.23
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `local`
+--
+
+DROP TABLE IF EXISTS `local`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `local` (
+  `name` varchar(60) NOT NULL,
+  `municipal_code` varchar(7) DEFAULT NULL,
+  PRIMARY KEY (`name`),
+  KEY `municipal_code` (`municipal_code`),
+  CONSTRAINT `local_ibfk_1` FOREIGN KEY (`municipal_code`) REFERENCES `municipality` (`municipal_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `local`
+--
+
+LOCK TABLES `local` WRITE;
+/*!40000 ALTER TABLE `local` DISABLE KEYS */;
+INSERT INTO `local` VALUES ('Dr Beyers Naudé Local Municipality','EC101'),('Blue Crane Route Local Municipality','EC102'),('Makana Local Municipality','EC104'),('Ndlambe Local Municipality','EC105'),('Sundays River Valley Local Municipality','EC106'),('Kouga Local Municipality','EC108'),('Kou-Kamma Local Municipality','EC109'),('Mbhashe Local Municipality','EC121'),('Mnquma Local Municipality','EC122'),('Great Kei Local Municipality','EC123'),('Amahlathi Local Municipality','EC124'),('Ngqushwa Local Municipality','EC126'),('Raymond Mhlaba Local Municipality','EC129'),('Inxuba Yethemba Local Municipality','EC131'),('Intsika Yethu Local Municipality','EC135'),('Emalahleni Local Municipality','EC136'),('Engcobo Local Municipality','EC137'),('Sakhisizwe Local Municipality','EC138'),('Enoch Mgijima Local Municipality','EC139'),('Elundini Local Municipality','EC141'),('Senqu Local Municipality','EC142'),('Walter Sisulu Local Municipality','EC145'),('Ingquza Hill Local Municipality','EC153'),('Port St Johns Local Municipality','EC154'),('Nyandeni Local Municipality','EC155'),('Mhlontlo Local Municipality','EC156'),('King Sabata Dalindyebo Local Municipality','EC157'),('Matatiele Local Municipality','EC441'),('Umzimvubu Local Municipality','EC442'),('Mbizana Local Municipality','EC443'),('Ntabankulu Local Municipality','EC444'),('Letsemeng Local Municipality','FS161'),('Kopanong Local Municipality','FS162'),('Mohokare Local Municipality','FS163'),('Masilonyana Local Municipality','FS181'),('Tokologo Local Municipality','FS182'),('Tswelopele Local Municipality','FS183'),('Matjhabeng Local Municipality','FS184'),('Nala Local Municipality','FS185'),('Setsoto Local Municipality','FS191'),('Dihlabeng Local Municipality','FS192'),('Nketoana Local Municipality','FS193'),('Maluti-a-Phofung Local Municipality','FS194'),('Phumelela Local Municipality','FS195'),('Mantsopa Local Municipality','FS196'),('Moqhaka Local Municipality','FS201'),('Ngwathe Local Municipality','FS203'),('Metsimaholo Local Municipality','FS204'),('Mafube Local Municipality','FS205'),('Emfuleni Local Municipality','GT421'),('Midvaal Local Municipality','GT422'),('Lesedi Local Municipality','GT423'),('Mogale City Local Municipality','GT481'),('Merafong City Local Municipality','GT484'),('Rand West City Local Municipality','GT485'),('Umdoni Local Municipality','KZN212'),('Umzumbe Local Municipality','KZN213'),('uMuziwabantu Local Municipality','KZN214'),('Ray Nkonyeni Local Municipality','KZN216'),('uMshwathi Local Municipality','KZN221'),('uMngeni Local Municipality','KZN222'),('Mpofana Local Municipality','KZN223'),('Impendle Local Municipality','KZN224'),('Msunduzi Local Municipality','KZN225'),('Mkhambathini Local Municipality','KZN226'),('Richmond Local Municipality','KZN227'),('Okhahlamba Local Municipality','KZN235'),('Inkosi Langalibalele Local Municipality','KZN237'),('Alfred Duma Local Municipality','KZN238'),('Endumeni Local Municipality','KZN241'),('Nqutu Local Municipality','KZN242'),('Msinga Local Municipality','KZN244'),('Umvoti Local Municipality','KZN245'),('Newcastle Local Municipality','KZN252'),('eMadlangeni Local Municipality','KZN253'),('Dannhauser Local Municipality','KZN254'),('eDumbe Local Municipality','KZN261'),('uPhongolo Local Municipality','KZN262'),('Abaqulusi Local Municipality','KZN263'),('Nongoma Local Municipality','KZN265'),('Ulundi Local Municipality','KZN266'),('uMhlabuyalingana Local Municipality','KZN271'),('Jozini Local Municipality','KZN272'),('Mtubatuba Local Municipality','KZN275'),('Big Five Hlabisa Local Municipality','KZN276'),('uMfolozi Local Municipality','KZN281'),('uMhlathuze Local Municipality','KZN282'),('uMlalazi Local Municipality','KZN284'),('Mthonjaneni Local Municipality','KZN285'),('Nkandla Local Municipality','KZN286'),('Mandeni Local Municipality','KZN291'),('KwaDukuza Local Municipality','KZN292'),('Ndwedwe Local Municipality','KZN293'),('Maphumulo Local Municipality','KZN294'),('Greater Kokstad Local Municipality','KZN433'),('Ubuhlebezwe Local Municipality','KZN434'),('Umzimkhulu Local Municipality','KZN435'),('Dr Nkosazana Dlamini Zuma Local Municipality','KZN436'),('Greater Giyani Local Municipality','LIM331'),('Greater Letaba Local Municipality','LIM332'),('Greater Tzaneen Local Municipality','LIM333'),('Ba-Phalaborwa Local Municipality','LIM334'),('Maruleng Local Municipality','LIM335'),('Musina Local Municipality','LIM341'),('Thulamela Local Municipality','LIM343'),('Makhado Local Municipality','LIM344'),('Collins Chabane Local Municipality','LIM345'),('Blouberg Local Municipality','LIM351'),('Molemole Local Municipality','LIM353'),('Polokwane Local Municipality','LIM354'),('Lepelle-Nkumpi Local Municipality','LIM355'),('Thabazimbi Local Municipality','LIM361'),('Lephalale Local Municipality','LIM362'),('Bela-Bela Local Municipality','LIM366'),('Mogalakwena Local Municipality','LIM367'),('Modimolle–Mookgophong Local Municipality','LIM368'),('Ephraim Mogale Local Municipality','LIM471'),('Elias Motsoaledi Local Municipality','LIM472'),('Makhuduthamaga Local Municipality','LIM473'),('Fetakgomo Tubatse Local Municipality','LIM476'),('Albert Luthuli Local Municipality','MP301'),('Msukaligwa Local Municipality','MP302'),('Mkhondo Local Municipality','MP303'),('Pixley ka Seme Local Municipality','MP304'),('Lekwa Local Municipality','MP305'),('Dipaleseng Local Municipality','MP306'),('Govan Mbeki Local Municipality','MP307'),('Victor Khanye Local Municipality','MP311'),('Steve Tshwete Local Municipality','MP313'),('Emakhazeni Local Municipality','MP314'),('Thembisile Hani Local Municipality','MP315'),('Dr JS Moroka Local Municipality','MP316'),('Thaba Chweu Local Municipality','MP321'),('Nkomazi Local Municipality','MP324'),('Bushbuckridge Local Municipality','MP325'),('Mbombela Local Municipality','MP326'),('Richtersveld Local Municipality','NC061'),('Nama Khoi Local Municipality','NC062'),('Kamiesberg Local Municipality','NC064'),('Hantam Local Municipality','NC065'),('Karoo Hoogland Local Municipality','NC066'),('Khâi-Ma Local Municipality','NC067'),('Ubuntu Local Municipality','NC071'),('Umsobomvu Local Municipality','NC072'),('Emthanjeni Local Municipality','NC073'),('Kareeberg Local Municipality','NC074'),('Renosterberg Local Municipality','NC075'),('Thembelihle Local Municipality','NC076'),('Siyathemba Local Municipality','NC077'),('Siyancuma Local Municipality','NC078'),('Kai !Garib Local Municipality','NC082'),('!Kheis Local Municipality','NC084'),('Tsantsabane Local Municipality','NC085'),('Kgatelopele Local Municipality','NC086'),('Dawid Kruiper Local Municipality','NC087'),('Sol Plaatje Local Municipality','NC091'),('Dikgatlong Local Municipality','NC092'),('Magareng Local Municipality','NC093'),('Phokwane Local Municipality','NC094'),('Joe Morolong Local Municipality','NC451'),('Ga-Segonyana Local Municipality','NC452'),('Gamagara Local Municipality','NC453'),('Moretele Local Municipality','NW371'),('Madibeng Local Municipality','NW372'),('Rustenburg Local Municipality','NW373'),('Kgetlengrivier Local Municipality','NW374'),('Moses Kotane Local Municipality','NW375'),('Ratlou Local Municipality','NW381'),('Tswaing Local Municipality','NW382'),('Mahikeng Local Municipality','NW383'),('Ditsobotla Local Municipality','NW384'),('Ramotshere Moiloa Local Municipality','NW385'),('Naledi Local Municipality','NW392'),('Mamusa Local Municipality','NW393'),('Greater Taung Local Municipality','NW394'),('Lekwa-Teemane Local Municipality','NW396'),('Kagisano-Molopo Local Municipality','NW397'),('City of Matlosana Local Municipality','NW403'),('Maquassi Hills Local Municipality','NW404'),('JB Marks Local Municipality','NW405'),('Matzikama Local Municipality','WC011'),('Cederberg Local Municipality','WC012'),('Bergrivier Local Municipality','WC013'),('Saldanha Bay Local Municipality','WC014'),('Swartland Local Municipality','WC015'),('Witzenberg Local Municipality','WC022'),('Drakenstein Local Municipality','WC023'),('Stellenbosch Local Municipality','WC024'),('Breede Valley Local Municipality','WC025'),('Langeberg Local Municipality','WC026'),('Theewaterskloof Local Municipality','WC031'),('Overstrand Local Municipality','WC032'),('Cape Agulhas Local Municipality','WC033'),('Swellendam Local Municipality','WC034'),('Kannaland Local Municipality','WC041'),('Hessequa Local Municipality','WC042'),('Mossel Bay Local Municipality','WC043'),('George Local Municipality','WC044'),('Oudtshoorn Local Municipality','WC045'),('Bitou Local Municipality','WC047'),('Knysna Local Municipality','WC048'),('Laingsburg Local Municipality','WC051'),('Prince Albert Local Municipality','WC052'),('Beaufort West Local Municipality','WC053');
+/*!40000 ALTER TABLE `local` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-05-26 10:01:49

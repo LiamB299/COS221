@@ -1,0 +1,28 @@
+html {
+    text-align: center;
+    font-family: "Arial Narrow";
+    background-color: rgba(19,22,23,0.2);
+}
+
+header {
+    font-size: 50px;
+}
+
+.grid-container {
+    background-color: rgba(16,22,23,0.36);
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 14px;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+
+.grid-item {
+    font-size: xx-large;
+}
+
+header {
+    padding-top: 80px;
+    text-decoration: underline;
+}
+

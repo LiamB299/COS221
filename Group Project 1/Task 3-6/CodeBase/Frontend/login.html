@@ -1,0 +1,56 @@
+<html>
+    <head>
+
+    </head>
+    <header>
+        <h1>Voting 2021</h1>
+        <img class="img" src="img/flag.png" alt="flag">
+    </header>
+
+    <body>
+    <div id = "loginForm">
+        <div>
+            <p id="selection">Select the appropriate option to login for:</p>
+             <button type="button" onclick="Voter()">Voter</button>
+             <button type="button" onclick="Staff()">Staff</button>
+             <button type="button" onclick="Candidate()">Ward</button>
+             <button type="button" onclick="Party()">Party</button>
+
+            <!-- <select id="mySelect">
+              <option onclick="Voter()">Voter</option>
+              <option onclick="Staff()">Staff</option>
+              <option onclick="Candidate()">Candidate</option>
+              <option id="selparty" value="party" onclick="Party()">Party</option>
+            </select> -->
+        </div>
+        <div id = "overview"  hidden>
+        <div class="input-group">
+          <label id="ID">ID Number</label>
+          <input id="ID1" type="text" name="ID" value="9904275017089">
+        </div>
+        <div class="input-group">
+          <label id="partyNum">Party No.</label>
+          <input id="partyNum1" type="text" name="partynum" value="3">
+        </div>
+        <div class="input-group">
+          <label id="workID">Work ID</label>
+          <input id="workID1" type="text" name="workID" value="8794562541315">
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input id="pass" type="password" name="password" value="f@t3Lstats">
+        </div>
+        <div class="input-group">
+          <button id="sub" class="btn" name="login">Login</button>
+        </div>
+      <p id = "Wonder"><p>
+        <p>
+            Need to register? <a href="signup.html">Sign up</a>
+        </p>
+    </div>
+    </body>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.JQuery.com/JQuery-3.4.1.min.js"></script>
+    <script src="../Javascript/login.js"></script>
+    <script src="../Javascript/API_send.js"></script>
+</html>

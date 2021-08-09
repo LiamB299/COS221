@@ -1,0 +1,45 @@
+SignUp Pages:
+
+Voter fields:
+province = gauteng|limpopo|mpumalanga|north-west|western-cape|northern-cape|eastern-cape|kwa-zulu-natal|free-state
+id number
+password 1
+password 2
+address
+
+//The municpality code is set after the users is validated and when they log in
+
+
+Ward fields:
+name
+surname
+id number
+party number 
+password 1
+password 2
+municipality code (They know where they want to run but may be changed 
+after being validated and logging in)
+
+Staff fields:
+work id
+manager id (to validate they are a staff member)
+password 1
+password 2
+initials
+surname
+
+Party for election fields:
+name
+password 1
+password 2
+
+(after a party has been registered by a staff member they may elect themselves as 
+a candidate proportional representative in some municipality)
+
+Party_munic fields:
+party number
+password
+municipality code
+Also for district (set as checkbox, this ensures they also choose to be in the district
+elections as well as local metro if the area allows it, it is validated)
+
