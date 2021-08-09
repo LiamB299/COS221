@@ -1,0 +1,35 @@
+Relational algebra
+Question 4
+
+\select_{YearModel=2020} Cars;
+
+
+Question 5
+
+\project_{Type} ((\select_{YearModel=2020} MotorBikes)  
+	\join_{BikeID=BID}  
+		(Customer_Bike 
+			\join_{CustID = CustomerID} 
+				\select_{Surname="Mackenzie"} Customer));
+				
+Question 6
+
+\project_{Name}  
+	(Customer  \join_{CustomerID=CustID}  
+		((
+			(Customer_Bike \diff 
+				(\project_{CustID, BID, RentedDate}			
+					(Customer_Bike \join_{BikeID=BID}	
+						(\project_{BikeID}  
+							\select_{Type="Kawasaki ZX-10R SE"} MotorBikes)))
+			\diff 
+			Returned_Bike)  
+				\join_{BikeID=BID}  
+					(\project_{BikeID}  
+						\select_{Type="Kawasaki ZX-10R SE"} MotorBikes)));
+			
+		(Customer_Bike \diff 
+			(\project_{CustID, BID, RentedDate}			
+				(Customer_Bike \join_{BikeID=BID}	
+					(\project_{BikeID}  
+						\select_{Type="Kawasaki ZX-10R SE"} MotorBikes)))

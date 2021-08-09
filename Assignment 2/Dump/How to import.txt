@@ -1,0 +1,5 @@
+Open workbench in localhost or in a server.
+
+Go to tab -> Server 
+
+Look for data import and select this folder... 
