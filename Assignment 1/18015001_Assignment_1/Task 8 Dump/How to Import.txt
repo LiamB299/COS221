@@ -1,0 +1,4 @@
+In SQL workbench:
+From your localHost window,
+Select Server > Data Import > Select folder holding Schema
+Select import

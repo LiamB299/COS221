@@ -1,0 +1,5 @@
+Due to containing multiple genres in field:
+select * from book where book_genre like 'Horror%';
+
+If only a single genre in the field:
+select * from book where book_genre='horror';
